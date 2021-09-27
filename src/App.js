@@ -147,7 +147,7 @@ export default class App extends Component {
       api.update(todoId, {
         completed: todoCompleted
       }).then(() => {
-        console.log(`update todo ${todoId}`, todoCompleted)
+        console.log(`update todo please ${todoId}`, todoCompleted)
         const eventName = (todoCompleted) ? 'todoCompleted' : 'todoUnfinished'
         analytics.track(eventName, {
           category: 'todos'
