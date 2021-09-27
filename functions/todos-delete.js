@@ -10,7 +10,7 @@ exports.handler = async (event, context) => {
     secret: process.env.FAUNADB_SERVER_SECRET
   }) 
   const id = getId(event.path)
-  console.log(`Function 'todo-delete' invoked. delete id: ${id}`)
+  console.log(`Function 'todo-deletetest' invoked. delete id: ${id}`)
   return client.query(q.Delete(q.Ref(`classes/todos/${id}`)))
     .then((response) => {
       console.log('success', response)
