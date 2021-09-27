@@ -42,7 +42,7 @@ export default class App extends Component {
     const todoValue = this.inputElement.value
 
     if (!todoValue) {
-      alert('Please add Todo title')
+      alert('Please add Todo title yo')
       this.inputElement.focus()
       return false
     }
@@ -148,6 +148,7 @@ export default class App extends Component {
         completed: todoCompleted
       }).then(() => {
         console.log(`update todo please ${todoId}`, todoCompleted)
+        messagebox
         const eventName = (todoCompleted) ? 'todoCompleted' : 'todoUnfinished'
         analytics.track(eventName, {
           category: 'todos'
