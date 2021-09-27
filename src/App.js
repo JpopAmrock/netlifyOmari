@@ -178,7 +178,7 @@ export default class App extends Component {
         api.update(todoId, {
           title: currentValue
         }).then(() => {
-          console.log(`update todo ${todoId}`, currentValue)
+          console.log(`update todo please ${todoId}`, currentValue)
           analytics.track('todoUpdated', {
             category: 'todos',
             label: currentValue
