@@ -148,7 +148,6 @@ export default class App extends Component {
         completed: todoCompleted
       }).then(() => {
         console.log(`update todo please ${todoId}`, todoCompleted)
-        messagebox
         const eventName = (todoCompleted) ? 'todoCompleted' : 'todoUnfinished'
         analytics.track(eventName, {
           category: 'todos'
