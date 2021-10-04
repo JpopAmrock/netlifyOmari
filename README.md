@@ -31,7 +31,7 @@ This application is using [React](https://reactjs.org/) for the frontend, [Netli
 
 ## Deploy with one click
 
-Click the [Deploy to Netlify Button](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/fauna-one-click&stack=fauna)
+Click the [Deploy to Netlify Button](https://app.netlify.com/start/deploy?repository=github.com/JpopAmrock/netlify-faunadb-example&stack=fauna)
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/netlify-faunadb-example&stack=fauna)
 
